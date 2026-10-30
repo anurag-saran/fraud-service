@@ -11,7 +11,8 @@
   <name>fraud-service</name>
   <description>
     Demo app for the Lightwell app priority dashboard.
-    Pins the catalog libraries payments-service does not.
+    logback-classic and commons-fileupload are not on payments-service.
+    woodstox-core supplies a CVE so the priority engine has a row to look up.
   </description>
 
   <properties>
@@ -22,6 +23,8 @@
     <logback.version>1.2.11</logback.version>
     <!-- Catalog fromVersion is 1.4.0. Lightwell build: 1.4.0.rhlw-00001 -->
     <fileupload.version>1.4.0</fileupload.version>
+    <!-- CVE-2022-40152. Lightwell build: 6.0.3.rhlw-00001 -->
+    <woodstox.version>6.0.3</woodstox.version>
   </properties>
 
   <repositories>
@@ -49,6 +52,11 @@
       <groupId>commons-fileupload</groupId>
       <artifactId>commons-fileupload</artifactId>
       <version>${fileupload.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.woodstox</groupId>
+      <artifactId>woodstox-core</artifactId>
+      <version>${woodstox.version}</version>
     </dependency>
   </dependencies>
 </project>

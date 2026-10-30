@@ -4,10 +4,11 @@
 
 Demo app for the [Lightwell app priority dashboard](https://github.com/anurag-saran/lightwell-github-plugin-demo/blob/rpe-naming/dashboard.md).
 
-Pins two catalog libraries that payments-service does not:
+Pins the catalog libraries payments-service does not, plus woodstox-core so the priority engine has a CVE:
 
 - `ch.qos.logback:logback-classic:1.2.11`
 - `commons-fileupload:commons-fileupload:1.4.0`
+- `com.fasterxml.woodstox:woodstox-core:6.0.3` (CVE-2022-40152)
 
 Not a production fraud product. Package: `com.example.fraud`.
 
