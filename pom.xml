@@ -20,11 +20,11 @@
     <maven.compiler.release>17</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- Catalog fromVersion. Lightwell build: 1.2.11.rhlw-00001 -->
-    <logback.version>1.2.11</logback.version>
+    <logback.version>1.2.11.rhlw-00001</logback.version>
     <!-- Catalog fromVersion is 1.4.0. Lightwell build: 1.4.0.rhlw-00001 -->
-    <fileupload.version>1.4.0</fileupload.version>
+    <fileupload.version>1.4.0.rhlw-00001</fileupload.version>
     <!-- CVE-2022-40152. Lightwell build: 6.0.3.rhlw-00001 -->
-    <woodstox.version>6.0.3</woodstox.version>
+    <woodstox.version>6.0.3.rhlw-00001</woodstox.version>
   </properties>
 
   <repositories>
